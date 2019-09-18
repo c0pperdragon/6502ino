@@ -6,8 +6,8 @@ void setup()
     Serial.begin(9600);
 
     // configure signal input pins 
-    pinMode(4,INPUT);  // IO request (active=0) 
-    pinMode(5,INPUT);  // RWB (read=1) 
+    pinMode(5,INPUT);  // IO request (active=0) 
+    pinMode(6,INPUT);  // RWB (read=1) 
 
     // configure bidirectional data pins to default non-pullup tri-state
     pinMode(A0,INPUT);   // D0
@@ -16,8 +16,8 @@ void setup()
     pinMode(A3,INPUT);   // D3
     pinMode(A4,INPUT);   // D4
     pinMode(A5,INPUT);   // D5
-    pinMode(2,INPUT);    // D6
-    pinMode(3,INPUT);    // D7
+    pinMode(3,INPUT);    // D6
+    pinMode(4,INPUT);    // D7
 
     // configure signal output pints
     digitalWrite(7,HIGH);
@@ -32,36 +32,36 @@ void loop()
     for (tries=0; tries<100000; tries++)
     {
         // wait until the 65c02 requests IO
-        while ((PIND & 0x10) == 0)  { }; 
+        while ((PIND & 0x20) == 0)  { }; 
 
         // read access
-        if (PIND & 0x20) 
+        if (PIND & 0x40) 
         {
             // perform io operation
             data = readIO();
                       
             // distribute the byte to port C and port D (keep ack inactive yet)
             PORTC = data & 0x3F;
-            PORTD = ((data>>4) & 0x0C) | 0x80;
+            PORTD = ((data>>3) & 0x18) | 0x80;
             DDRC = 0x3F;
-            DDRD = 0x8C;
+            DDRD = 0x98;
             
             // add small delay to let outgoing signals get through the resistors
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
-            DDRD = 0x8C;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
+            DDRD = 0x98;
                 
             noInterrupts();
 
             // pulse the ACK for exactly one clock 
-            PORTD = ((data>>4) & 0x0C);
-            PORTD = 0x80;
+            PORTD = ((data>>3) & 0x18);
+            PORTD = 0x98;
 
             // bring bidirectional ports back to idle state
             DDRC = 0x00;
@@ -80,7 +80,7 @@ void loop()
             PORTD = 0x80;
            
             // collect data from port C and D
-            data = (PINC & 0x3F) | ((PIND & 0x0C) << 4);
+            data = (PINC & 0x3F) | ((PIND & 0x18) << 3);
 
             // perform io operation
             writeIO(data);

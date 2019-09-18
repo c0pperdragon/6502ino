@@ -128,12 +128,12 @@ NoConn ~ 4500 6150
 $Comp
 L 74xx:74HC00 U3
 U 2 1 5D868474
-P 2400 1950
-F 0 "U3" H 2400 2275 50  0000 C CNN
-F 1 "74AC00" H 2400 2184 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2400 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2400 1950 50  0001 C CNN
-	2    2400 1950
+P 6400 3350
+F 0 "U3" H 6400 3675 50  0000 C CNN
+F 1 "74AC00" H 6400 3584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6400 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6400 3350 50  0001 C CNN
+	2    6400 3350
 	1    0    0    -1  
 $EndComp
 Text Label 4450 6850 2    50   ~ 0
@@ -651,19 +651,19 @@ Wire Wire Line
 Text Label 8750 2350 0    50   ~ 0
 D7
 Text Label 8750 2250 0    50   ~ 0
-D6
+D5
 Text Label 8750 2150 0    50   ~ 0
-D4
+D3
 Text Label 8750 2050 0    50   ~ 0
-D2
+D1
 Text Label 8750 1950 0    50   ~ 0
 D0
 Text Label 8750 1850 0    50   ~ 0
-D1
+D2
 Text Label 8750 1750 0    50   ~ 0
-D3
+D4
 Text Label 8750 1650 0    50   ~ 0
-D5
+D6
 Wire Wire Line
 	8650 1650 8750 1650
 Wire Wire Line
@@ -681,35 +681,35 @@ Wire Wire Line
 Wire Wire Line
 	8650 2350 8750 2350
 Text Label 7350 3050 2    50   ~ 0
-A2
+A0
 Text Label 7350 2950 2    50   ~ 0
-A3
+A1
 Text Label 7350 2850 2    50   ~ 0
-A4
+A2
 Text Label 7350 2750 2    50   ~ 0
-A5
+A4
 Text Label 7350 2650 2    50   ~ 0
-A6
+A5
 Text Label 7350 2550 2    50   ~ 0
 A7
 Text Label 7350 2450 2    50   ~ 0
-A8
+A14
 Text Label 7350 2350 2    50   ~ 0
-A9
+A13
 Text Label 7350 2250 2    50   ~ 0
-A10
+A12
 Text Label 7350 2150 2    50   ~ 0
 A11
 Text Label 7350 2050 2    50   ~ 0
-A12
+A10
 Text Label 7350 1950 2    50   ~ 0
-A13
+A9
 Text Label 7350 1850 2    50   ~ 0
-A14
+A8
 Text Label 7350 1750 2    50   ~ 0
-A1
+A6
 Text Label 7350 1650 2    50   ~ 0
-A0
+A3
 Wire Wire Line
 	7350 1650 7450 1650
 Wire Wire Line
@@ -792,16 +792,15 @@ Wire Wire Line
 	1800 2050 2100 2050
 Wire Wire Line
 	4500 6850 4450 6850
-NoConn ~ 4500 6950
 $Comp
 L 74xx:7400 U3
 U 4 1 5D830640
-P 6400 3350
-F 0 "U3" H 6400 3675 50  0000 C CNN
-F 1 "74AC00" H 6400 3584 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6400 3350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn7400" H 6400 3350 50  0001 C CNN
-	4    6400 3350
+P 2400 1950
+F 0 "U3" H 2400 2275 50  0000 C CNN
+F 1 "74AC00" H 2400 2184 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 2400 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 2400 1950 50  0001 C CNN
+	4    2400 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -915,42 +914,8 @@ Wire Wire Line
 $Comp
 L Device:R_Small R9
 U 1 1 5D8652E0
-P 4150 7250
-F 0 "R9" V 4100 7100 50  0000 C CNN
-F 1 "6K8" V 4100 7450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 7250 50  0001 C CNN
-F 3 "~" H 4150 7250 50  0001 C CNN
-	1    4150 7250
-	0    -1   1    0   
-$EndComp
-Text Label 3800 7250 2    50   ~ 0
-D7
-Wire Wire Line
-	4050 7250 3800 7250
-Wire Wire Line
-	4500 7250 4250 7250
-$Comp
-L Device:R_Small R10
-U 1 1 5D8652E9
-P 4150 7350
-F 0 "R10" V 4100 7200 50  0000 C CNN
-F 1 "6K8" V 4100 7550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 7350 50  0001 C CNN
-F 3 "~" H 4150 7350 50  0001 C CNN
-	1    4150 7350
-	0    -1   1    0   
-$EndComp
-Text Label 3800 7350 2    50   ~ 0
-D6
-Wire Wire Line
-	4050 7350 3800 7350
-Wire Wire Line
-	4500 7350 4250 7350
-$Comp
-L Device:R_Small R8
-U 1 1 5D880461
 P 4150 7150
-F 0 "R8" V 4100 7000 50  0000 C CNN
+F 0 "R9" V 4100 7000 50  0000 C CNN
 F 1 "6K8" V 4100 7350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 7150 50  0001 C CNN
 F 3 "~" H 4150 7150 50  0001 C CNN
@@ -958,14 +923,33 @@ F 3 "~" H 4150 7150 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Text Label 3800 7150 2    50   ~ 0
-IOSELECT
+D7
+Wire Wire Line
+	4050 7150 3800 7150
 Wire Wire Line
 	4500 7150 4250 7150
 $Comp
-L Device:R_Small R7
-U 1 1 5D8872E8
+L Device:R_Small R10
+U 1 1 5D8652E9
+P 4150 7250
+F 0 "R10" V 4100 7100 50  0000 C CNN
+F 1 "6K8" V 4100 7450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 7250 50  0001 C CNN
+F 3 "~" H 4150 7250 50  0001 C CNN
+	1    4150 7250
+	0    -1   1    0   
+$EndComp
+Text Label 3800 7250 2    50   ~ 0
+D6
+Wire Wire Line
+	4050 7250 3800 7250
+Wire Wire Line
+	4500 7250 4250 7250
+$Comp
+L Device:R_Small R8
+U 1 1 5D880461
 P 4150 7050
-F 0 "R7" V 4100 6900 50  0000 C CNN
+F 0 "R8" V 4100 6900 50  0000 C CNN
 F 1 "6K8" V 4100 7250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 7050 50  0001 C CNN
 F 3 "~" H 4150 7050 50  0001 C CNN
@@ -973,13 +957,28 @@ F 3 "~" H 4150 7050 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Text Label 3800 7050 2    50   ~ 0
-RWB
-Wire Wire Line
-	4050 7050 3800 7050
+IOSELECT
 Wire Wire Line
 	4500 7050 4250 7050
+$Comp
+L Device:R_Small R7
+U 1 1 5D8872E8
+P 4150 6950
+F 0 "R7" V 4100 6800 50  0000 C CNN
+F 1 "6K8" V 4100 7150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 6950 50  0001 C CNN
+F 3 "~" H 4150 6950 50  0001 C CNN
+	1    4150 6950
+	0    -1   1    0   
+$EndComp
+Text Label 3800 6950 2    50   ~ 0
+RWB
 Wire Wire Line
-	4050 7150 3800 7150
+	4050 6950 3800 6950
+Wire Wire Line
+	4500 6950 4250 6950
+Wire Wire Line
+	4050 7050 3800 7050
 $Comp
 L Device:R_Small R12
 U 1 1 5D898707
@@ -1005,4 +1004,5 @@ Wire Wire Line
 Wire Wire Line
 	7450 3350 6700 3350
 NoConn ~ 3700 2050
+NoConn ~ 4500 7350
 $EndSCHEMATC
