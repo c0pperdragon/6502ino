@@ -157,12 +157,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U3
 U 3 1 5E0B8439
-P 6200 4300
-F 0 "U3" H 6200 4625 50  0000 C CNN
-F 1 "74AC00" H 6200 4534 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6200 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6200 4300 50  0001 C CNN
-	3    6200 4300
+P 6900 4400
+F 0 "U3" H 6900 4725 50  0000 C CNN
+F 1 "74AC00" H 6900 4634 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6900 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6900 4400 50  0001 C CNN
+	3    6900 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -231,12 +231,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U3
 U 1 1 5D603546
-P 6900 4400
-F 0 "U3" H 6900 4725 50  0000 C CNN
-F 1 "74AC00" H 6900 4634 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6900 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6900 4400 50  0001 C CNN
-	1    6900 4400
+P 6200 4300
+F 0 "U3" H 6200 4625 50  0000 C CNN
+F 1 "74AC00" H 6200 4534 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6200 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6200 4300 50  0001 C CNN
+	1    6200 4300
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4500 7450
