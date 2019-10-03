@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "6502ino"
 Date "2019-09-20"
-Rev "1"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -533,7 +533,6 @@ Wire Wire Line
 	4500 2650 4600 2650
 Wire Wire Line
 	4500 2550 4600 2550
-NoConn ~ 4500 2250
 Text Label 4600 2150 0    50   ~ 0
 PHI2
 Wire Wire Line
@@ -1005,4 +1004,17 @@ Wire Wire Line
 	7450 3350 6700 3350
 NoConn ~ 3700 2050
 NoConn ~ 4500 7350
+$Comp
+L power:+5V #PWR?
+U 1 1 5D96B089
+P 4650 2250
+F 0 "#PWR?" H 4650 2100 50  0001 C CNN
+F 1 "+5V" V 4665 2378 50  0000 L CNN
+F 2 "" H 4650 2250 50  0001 C CNN
+F 3 "" H 4650 2250 50  0001 C CNN
+	1    4650 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2250 4650 2250
 $EndSCHEMATC

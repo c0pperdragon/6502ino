@@ -44,6 +44,7 @@ If everything works correctly, this will show you some status and the current se
 fuse bits. We are particularly interested in the value of the 'L' fuse bits, which on my
 factory default Arduino Uno shows as L:FF. To set the permanent clock output, you need
 to modify this value (an 8-bit value) to have the bit 6 set to 0. In my case this means
+
 to set the 'L' fuses to BF:
 ```
 avrdude -p atmega328p -b 19200 -C ../etc/avrdude.conf -c avrisp -P com10 -U lfuse:w:0xBF:m
